@@ -36,7 +36,7 @@ p {
 
 textarea {
   width: 100%;
-  min-height: 100px;
+  min-height: 20px;
   padding: 1rem;
   font-size: 1rem;
   border: none;
@@ -150,18 +150,18 @@ img.tarot-card {
   }
   
   .draw-button {
-    background-color: #9e66ff;
-    color: #fdf9f2;
-    border: none;
-    padding: 1.1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 12px;
-    cursor: pointer;
-    margin: 1rem auto;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(158, 102, 255, 0.3);
-    display: block;
+    
+  background-color: #9e66ff;
+  color: #fdf9f2;
+  border: none;
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(158, 102, 255, 0.3);
   }
 
   .header-image {
