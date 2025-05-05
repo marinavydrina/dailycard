@@ -131,13 +131,12 @@ img.tarot-card {
 
   .intro-text {
     font-size: 1.3rem;
-    line-height: 1.9;
     color: #e8d6c2;
     margin-bottom: 2rem;
   }
   
   .question-input {
-    width: 100%;
+    width: 80%;
     min-height: 70px;
     padding: 1rem;
     font-size: 1rem;
@@ -164,3 +163,14 @@ img.tarot-card {
     box-shadow: 0 4px 12px rgba(158, 102, 255, 0.3);
     display: block;
   }
+
+  .header-image {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 1.5rem auto 1rem auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+  
