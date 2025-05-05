@@ -110,7 +110,7 @@ img.tarot-card {
   /* Улучшение адаптивности */
   @media (max-width: 600px) {
     main {
-      padding: 1.5rem 1rem;
+      padding: 1rem 1rem;
     }
   
     .actions {
@@ -145,8 +145,8 @@ img.tarot-card {
   }
 
   .header-image {
-    width: 90%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 300px;
     height: auto;
     margin: 1.5rem auto 1rem auto;
     display: block;
@@ -161,4 +161,17 @@ img.tarot-card {
 
   .last-button {
     font-size: 1.2rem;
+  }
+
+  textarea.question-input {
+    width: 80%;
+    min-height: 50px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    resize: vertical;
+    background: #2e1a3c;
+    color: #f5e9dc;
   }
