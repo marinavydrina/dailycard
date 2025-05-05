@@ -99,3 +99,32 @@ img {
   gap: 1rem;
   margin-top: 2.5rem;
 }
+
+img.tarot-card {
+    max-width: 220px;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+  }
+  
+  /* Улучшение адаптивности */
+  @media (max-width: 600px) {
+    main {
+      padding: 1.5rem 1rem;
+    }
+  
+    .actions {
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+  
+    button {
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
