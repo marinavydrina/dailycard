@@ -36,15 +36,13 @@ def draw():
     question = data.get("question", "")
     card = random.choice(TAROT_CARDS)
 
-    client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
     prompt = f"""
 You are a tarot reader. A person asked: '{question or 'What do I need to know today?'}'.
 You drew the card '{card}'.
 Explain the meaning of this card in 200-300 characters, using intuitive and insightful language.
 """
 
-    response = client.chat.completions.create(
+    response = openai.chat.completions.create(
         model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are an intuitive and mystical tarot reader."},
