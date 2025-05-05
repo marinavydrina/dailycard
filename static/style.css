@@ -28,14 +28,14 @@ h2 {
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.5;
   margin-bottom: 2rem;
   color: #e8d6c2;
 }
 
 textarea {
-  width: 100%;
+  width: 80%;
   min-height: 20px;
   padding: 1rem;
   font-size: 1rem;
@@ -123,10 +123,7 @@ img.tarot-card {
       font-size: 0.95rem;
     }
   
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
+
   }
 
   .intro-text {
@@ -135,19 +132,6 @@ img.tarot-card {
     margin-bottom: 2rem;
   }
   
-  .question-input {
-    width: 80%;
-    min-height: 70px;
-    padding: 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    margin: 0 auto 1.5rem auto;
-    resize: vertical;
-    background: #2e1a3c;
-    color: #f5e9dc;
-    display: block;
-  }
   
   .draw-button {
     
