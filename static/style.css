@@ -101,7 +101,7 @@ img {
 }
 
 img.tarot-card {
-    max-width: 220px;
+    max-width: 200px;
     height: auto;
     margin: 1.5rem auto;
     display: block;
@@ -127,4 +127,40 @@ img.tarot-card {
       font-size: 1rem;
       line-height: 1.5;
     }
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    color: #e8d6c2;
+    margin-bottom: 2rem;
+  }
+  
+  .question-input {
+    width: 100%;
+    min-height: 70px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto 1.5rem auto;
+    resize: vertical;
+    background: #2e1a3c;
+    color: #f5e9dc;
+    display: block;
+  }
+  
+  .draw-button {
+    background-color: #9e66ff;
+    color: #fdf9f2;
+    border: none;
+    padding: 1.1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 1rem auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(158, 102, 255, 0.3);
+    display: block;
   }
