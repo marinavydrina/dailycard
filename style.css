@@ -1,0 +1,130 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #140022, #2a0c39);
+  color: #f5e9dc;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #f5e9dc;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: #fce9c9;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #e8d6c2;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  resize: vertical;
+  background: #2e1a3c;
+  color: #f5e9dc;
+}
+
+button {
+  background-color: #9e66ff;
+  color: #fdf9f2;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(158, 102, 255, 0.3);
+}
+
+button:hover {
+  background-color: #c8a1ff;
+  box-shadow: 0 6px 18px rgba(158, 102, 255, 0.6);
+}
+
+.actions button:first-child {
+  background-color: #2e2e2e;
+  color: #f5e9dc;
+}
+
+.actions button:first-child:hover {
+  background-color: #444;
+}
+
+a {
+  color: #d4bbff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+img.tarot-card {
+    max-width: 220px;
+    height: auto;
+    margin: 1.5rem auto;
+    display: block;
+  }
+  
+  /* Улучшение адаптивности */
+  @media (max-width: 600px) {
+    main {
+      padding: 1.5rem 1rem;
+    }
+  
+    .actions {
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+  
+    button {
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
