@@ -30,7 +30,7 @@ h2 {
 p {
   font-size: 1.2rem;
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #e8d6c2;
 }
 
@@ -135,7 +135,7 @@ img.tarot-card {
   color: #fdf9f2;
   border: none;
   padding: 1.2rem 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 14px;
   cursor: pointer;
@@ -155,6 +155,10 @@ img.tarot-card {
   }
   
   .back-astro {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: inline-block;
+  }
+
+  .last-button {
+    font-size: 1.2rem;
   }
