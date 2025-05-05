@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Daily Card</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Your Daily Card</h1>
+
+    <section id="card-display">
+      <img src="{{ image }}" alt="{{ card }}" style="max-width: 300px;" />
+      <h2>{{ card }}</h2>
+      <p>{{ text }}</p>
+    </section>
+
+    <div class="actions">
+      <button onclick="window.location.href='https://astrolove.com'">I'm not interested in the Daily Card</button>
+      <button onclick="window.location.href='/thanks'">Subscribe to Daily Card (5 credits per day)</button>
+    </div>
+
+    <footer>
+      <a href="https://astrolove.com">Back to Astrolove</a>
+    </footer>
+  </main>
+</body>
+</html>

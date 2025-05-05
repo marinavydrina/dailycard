@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Your Daily Card</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Discover Your Daily Card</h1>
+    <p>
+      Focus on a question that’s important to you and type it in the field below — or simply leave it empty if you prefer a general reading. Your Daily Card is ready to guide you either way.
+    </p>
+    <form id="draw-form">
+      <textarea id="question" name="question" placeholder="Type your question here (optional)"></textarea>
+      <button type="submit" id="draw-button">Draw Card</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('draw-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const question = document.getElementById('question').value;
+      const button = document.getElementById('draw-button');
+      button.disabled = true;
+      button.innerText = 'Drawing...';
+
+      try {
+        const response = await fetch('/draw', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ question })
+        });
+        const data = await response.json();
+        if (data.redirect) {
+          window.location.href = data.redirect;
+        }
+      } catch (error) {
+        alert('Something went wrong. Please try again.');
+      } finally {
+        button.disabled = false;
+        button.innerText = 'Draw Card';
+      }
+    });
+  </script>
+</body>
+</html>
