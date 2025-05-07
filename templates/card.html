@@ -2,6 +2,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-21N1HMFE5S"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){ dataLayer.push(arguments); }
+   gtag('js', new Date());
+   gtag('config', 'G-21N1HMFE5S');
+ </script>
+ <!-- GTM fallback-отслеживание -->
+  <script>
+  
+    // fallback после 3 секунд
+    setTimeout(function () {
+      try {
+        var gtmLoaded = window.dataLayer.some(function (e) {
+          return e && e.event === 'gtm.js';
+        });
+  
+        if (!gtmLoaded) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'gtm_failed', {
+              event_category: 'diagnostics',
+              event_label: window.location.pathname
+            });
+          }
+  
+          console.warn("⚠️ GTM не загрузился вовремя на странице: " + window.location.pathname);
+        }
+      } catch (err) {
+        console.error("Ошибка в GTM fallback:", err);
+      }
+    }, 3000);
+  </script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -23,7 +56,7 @@
     
     <section id="card-display">
       <img src="{{ image }}" alt="{{ card }}" class="tarot-card" />
-            <p>{{ text }}</p>
+            <p class="tarot-text">{{ text }}</p>
     </section>
 
     <div class="actions">
