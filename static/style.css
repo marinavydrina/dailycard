@@ -101,7 +101,7 @@ img {
 }
 
 img.tarot-card {
-    max-width: 200px;
+    max-width: 180px;
     height: auto;
     margin: 1.5rem auto;
     display: block;
@@ -165,7 +165,7 @@ img.tarot-card {
 
   textarea.question-input {
     width: 80%;
-    min-height: 50px;
+    min-height: 30px;
     padding: 0.5rem;
     font-size: 0.9rem;
     border: none;
@@ -174,4 +174,8 @@ img.tarot-card {
     resize: vertical;
     background: #2e1a3c;
     color: #f5e9dc;
+  }
+
+  .tarot-text {
+    font-size: 1.1rem;
   }
